@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Fund Me App</title>
-  </head>
 
-  <body>
-    <button id="connectButton">Connect</button>
-    <button id="balanceButton">getBalance</button>
-    <button id="withdrawButton">Withdraw</button>
-    <!-- <form> -->
+<head>
+  <title>Fund Me App</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <div class="welcome-container">
+    <h2 class="welcome-title">Welcome to Fund Me App</h2>
+    <p class="welcome-message">Hello, I'm <span class="highlight-name">Proffgodswill</span>. Glad to have you here!</p>
+  </div>
+
+  <div class="top-bar">
+    <div class="top-center">
+      <button id="balanceButton">Get Balance</button>
+      <button id="withdrawButton">Withdraw</button>
+    </div>
+    <button id="connectButton" class="top-right">Connect</button>
+  </div>
+
+  <h1>Fund Me App</h1>
+  <div class="fund-section">
     <label for="ethAmount">ETH Amount</label>
     <input id="ethAmount" placeholder="0.1" />
-    <button type="button" id="fundButton" > Fund </button>
-    <!-- </form> -->
-  </body>
+    <button type="button" id="fundButton">Fund</button>
+  </div>
 
   <script src="./index.js" type="module"></script>
+</body>
+
 </html>
